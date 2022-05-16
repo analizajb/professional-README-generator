@@ -15,7 +15,13 @@ const promptUser = () => {
     ]);
 };
 
-const prompProject = () => {
+const prompProject = portfolioData => {
+    portfolioData.projects = [];
+    //if there's no 'projects' array property, create one
+    if (!portfolioData.projects) {
+        portfolioData.projects = [];
+    }
+
     console.log(`
     =================
     Add a New Project
@@ -52,11 +58,30 @@ const prompProject = () => {
             name: 'test',
             message: 'Please provide the test instructions.' 
         },
-     ])
-}
+        {
+            type: 'confirm',
+            name: 'confirmAddProject',
+            message: 'Would you like to enter another project?',
+            default: false
+        }
+    ])
 
-promptUser().then(answers => console.log(answers));
+    .then(projectData => {
+        portfolioData.projects.push(projectData);
+        if (projectData.confirmAddProject) {
+            return prompProject(portfolioData);
+        } else {
+            return portfolioData;
+        }
+    });
+};
 
+
+promptUser()
+ .then(prompProject)
+ .then(portfolioData => {
+     console.log(portfolioData);
+ });
 // const fs = require('fs');
 // const generatePage = require('./src/page-template');
 
