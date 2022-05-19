@@ -21,7 +21,7 @@ const promptUser = [
     {
         type: 'input',
         name: 'description',
-        message: 'Provide a description of your project. Think "who, what why?" (required',
+        message: 'Provide a description of your project. Think "who, what why?" (required)',
         validate: descriptionInput => {
             if (descriptionInput) {
                 return true;
