@@ -1,34 +1,74 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license == 'Apache 2.0 License') {
+  if (license == 'GNU AGPLv3') {
+    return `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`;
+  }
+  if (license == 'GNU GPLv3') {
+    return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+  }
+  if (license == 'GNU LGPLv3') {
+    return `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) `;
+  }
+  if (license == 'Mozilla Public License 2.0') {
+    return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
+  }
+  if (license == 'Apache License 2.0') {
     return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
   }
-  if (license == 'MIT') {
+  if (license == 'MIT License') {
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   }
-  if (license == 'Boost') {
+  if (license == 'Boost Software License 1.0') {
     return `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
   }
-  if (license == 'BSD') {
-    return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+  if (license == 'The Unlicense') {
+    return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
   }
-  if (license == 'Apache 2.0 License') {
-    return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+  if (license == 'None') {
+    return `No licenses for this project have been submitted.`;
   }
-  if (license == 'Apache 2.0 License') {
-    return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+};
+
+function renderLicenseLink(license) {
+  if (license == 'GNU AGPLv3') {
+    return `(https://www.gnu.org/licenses/agpl-3.0)`;
   }
+  if (license == 'GNU GPLv3') {
+    return `(https://www.gnu.org/licenses/gpl-3.0)`;
+  }
+  if (license == 'GNU LGPLv3') {
+    return `(https://www.gnu.org/licenses/lgpl-3.0)`;
+  }
+  if (license == 'Mozilla Public License 2.0') {
+    return `(https://opensource.org/licenses/MPL-2.0)`;
+  }
+  if (license == 'Apache License 2.0') {
+    return `(https://opensource.org/licenses/Apache-2.0)`;
+  }
+  if (license == 'MIT License') {
+    return `(https://opensource.org/licenses/MIT)`;
+  }
+  if (license == 'Boost Software License 1.0') {
+    return `(https://www.boost.org/LICENSE_1_0.txt)`;
+  }
+  if (license == 'The Unlicense') {
+    return `(http://unlicense.org/)`;
+  }
+  if (license == 'None') {
+    return ``;
+  }
+
 }
 
-function renderLicenseLink(license) {}
+function renderLicenseSection(license) {
+  return `${license}`
+ }
 
-function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   - [Description](#description)
@@ -37,7 +77,7 @@ function generateMarkdown(data) {
   - [License](#license)
   - [Contributions](#contribution)
   - [Tests](#test)
-  - [Questions](#quesdev)
+  - [Questions/Future Development](#quesdev)
 
   ## Description
   ${data.description}
@@ -46,11 +86,12 @@ function generateMarkdown(data) {
   ${data.install}
 
   ## Usage Information
-  ${data.usuage}
+  ${data.usage}
 
   ## License
   ${renderLicenseSection(data.license)}
   ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
 
   ## Contributions
   ${data.contribution}
@@ -58,10 +99,10 @@ function generateMarkdown(data) {
   ## Tests
   ${data.test}
 
-  ## Questions:
+  ## Questions/Future Development:
   ${data.quesdev}
-  - Email: ${data.email}
-  - Github: [${data.github}](https://github.com/${data.github})
+  - Email me at <${data.email}>
+  - Check me out on [GitHub](https://github.com/${data.github})
   
   `;
 }

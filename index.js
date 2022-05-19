@@ -64,7 +64,16 @@ const promptUser = [
         type: 'checkbox',
         name: 'license',
         message: 'Choose a license for your project or choose none. (required)',
-        choices: ['MIT', 'Mozilla Public License 2.0', 'Ms-PL', 'Apache 2.0 License', 'None'],
+        choices: 
+                ['GNU AGPLv3', 
+                'GNU GPLv3', 
+                'GNU LGPLv3', 
+                'Mozilla Public License 2.0', 
+                'Apache License 2.0', 
+                'MIT License', 
+                'Boost Software License 1.0', 
+                'The Unlicense', 
+                'None'],
         validate: nameInput => {
             if (nameInput) {
                 return true;
