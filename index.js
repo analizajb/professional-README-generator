@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generatePage = require('./src/generate-page');
+const generatePage = require('./utils/generateMarkdown');
 
 const promptUser = [
     // Project title
@@ -64,9 +64,9 @@ const promptUser = [
         type: 'checkbox',
         name: 'license',
         message: 'Choose a license for your project or choose none. (required)',
-        choices: ['MIT', 'BSD', 'Ms-PL', 'Apache', 'None'],
-        validate: licenseInput => {
-            if (licenseInput) {
+        choices: ['MIT', 'Mozilla Public License 2.0', 'Ms-PL', 'Apache 2.0 License', 'None'],
+        validate: nameInput => {
+            if (nameInput) {
                 return true;
             } else {
                 console.log('This section is required.');
@@ -145,6 +145,7 @@ const promptUser = [
         }
     },
 ];
+
 
 // Function to generate READme
 function writeToFile(fileName, data) {
