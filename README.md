@@ -31,10 +31,7 @@
   - README will be generated in the dist folder
 
   ## Video Demonstration
-  [Click here to view video demonstration](https://drive.google.com/file/d/1u3tL0cdQROHh82AMtOvXP_BOIgXtXGRH/view)
-  
-  [Professional README Generator (1)](https://user-images.githubusercontent.com/96861913/169619884-cb092ea8-3275-4386-89a4-db0aa7cb0d5a.gif)
-
+  Video Demonstration can be found [here](https://drive.google.com/file/d/1ynI2PL624Cgvyn25ZT8oYiL_pmZjTEVv/view)
 
   ## Questions
   - Email me at <analizaboehning@gmail.com>
