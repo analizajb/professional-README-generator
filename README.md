@@ -5,33 +5,36 @@
   - [Installation](#install)
   - [Usage Information](#usage)
   - [License](#license)
-  - [Contributions](#contribution)
   - [Tests](#test)
-  - [Questions](#quesdev)
+  - [Video Demonstration](#videodemo)
+  - [Questions](#questions)
 
   ## Description
-  This application will allow users to generate a README in a more convenient and straightforward way. The user will not have to worry about providing proper syntax as it will be apart of the automatic generating concept of this application. 
+  You've written so much amazing code - go you! But wait, did you forget one of the most important steps? You forgot to generate your README. Okay, maybe you didn't forget, you're just unsure how to begin. Well, that's where the concept of this project comes in! This project allows a user to generate a README by simply answering pre-selected questions to help the process along of generating a README. Once you hit enter in the last prompt, your README will be ready to view in the "dist" folder. It's pretty convenient but I'll stop talking so you can move on to seeing how this all works!
 
   ## Installation
-  To install this project, a user will have to download my code from my GitHub. The user must also install inquirer by using the npm install inquirer command in the terminal.
+  - Users must download the code here in GitHub 
+  - Open folder in VS Code
+  - User must install inquirer by running "npm install inquirer"
 
   ## Usage Information
-  This project can be used to easily generate a README.
+  This will be used to generate a README.
 
   ## License
-  Mozilla Public License 2.0
-  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-  (https://opensource.org/licenses/MPL-2.0)
-
-  ## Contributions
-  Analiza Boehning
+  MIT License
+  (https://opensource.org/licenses/MIT)
 
   ## Tests
-  Users will be able to test this project by running "node index" in the terminal. Of course, the code and inquirer must be installed prior to this step. These have been mentioned above under the "Installation" section.
+  Users will be able to test this project by following the Installation steps and then:
+  - running "node index" in the terminal
+  - inputting all the necessary, required information
+  - README will be generated in the dist folder
 
-  ## Questions:
-  Future development includes ways to allow the user to submit more personalization like with emoticons or inputting screenshots. 
-  - Email me at <analizaboehning@hotmail.com>
+  ## Video Demonstration
+   <--! TO BE INCLUDED SOON !-->
+
+  ## Questions
+  - Email me at <analizaboehning@gmail.com>
   - Check me out on [GitHub](https://github.com/analizajb)
   
   

@@ -61,7 +61,7 @@ const promptUser = [
     },
     // Project Licensing
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'Choose a license for your project or choose none. (required)',
         choices: 
@@ -170,7 +170,7 @@ function init() {
     inquirer.prompt(promptUser)
     .then(function (userInput) {
         console.log(userInput)
-        writeToFile("README.md", generatePage(userInput));
+        writeToFile("dist/README.md", generatePage(userInput));
     });
 };
 
