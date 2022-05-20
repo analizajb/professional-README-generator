@@ -1,4 +1,4 @@
-# Analiza
+# Professional README Generator
 
   ## Table of Contents
   - [Description](#description)
@@ -10,28 +10,28 @@
   - [Questions/Future Development](#quesdev)
 
   ## Description
-  analiza is so cool cause shes a leo
+  This allows a user to generate README.
 
   ## Installation
-  there is nothing
+  To download the code and install inquirer.
 
   ## Usage Information
-  my project will be used however i want
+  This project could be used by developers seeking a quick way to make a README.
 
   ## License
-  GNU LGPLv3
-  [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) 
-  (https://www.gnu.org/licenses/lgpl-3.0)
+  MIT License
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  (https://opensource.org/licenses/MIT)
 
   ## Contributions
   Analiza Boehning
 
   ## Tests
-  by testing it out obviously
+  To test this project, run node index and then submit all information into the prompts.
 
   ## Questions/Future Development:
-  i have no quesrions
-  - Email me at <analizaboehning@gmail.com>
+  No questions or future development at this time.
+  - Email me at <analizabeohning@gmail.com>
   - Check me out on [GitHub](https://github.com/analizajb)
   
   

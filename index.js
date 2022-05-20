@@ -161,7 +161,7 @@ function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         if (err)
             throw err;
-        console.log('Thank you! Your information has been properly submitted and generated into a README.')
+        console.log('Thank you! Your information has been properly submitted and generated into a README located in the dist folder.')
     });
 };
 
