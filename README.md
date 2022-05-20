@@ -31,6 +31,8 @@
   - README will be generated in the dist folder
 
   ## Video Demonstration
+  [Video](https://drive.google.com/file/d/1u3tL0cdQROHh82AMtOvXP_BOIgXtXGRH/view)
+  
    <--! TO BE INCLUDED SOON !-->
 
   ## Questions
